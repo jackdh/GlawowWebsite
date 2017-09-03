@@ -20,8 +20,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <?php if ( is_front_page() && is_home() ) : ?>
 	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <?php endif; ?>
-<div class="col-md-9">
-	
+
 
 <div class="wrapper" id="wrapper-index">
 

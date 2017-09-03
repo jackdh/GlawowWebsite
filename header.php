@@ -29,8 +29,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="row">
 		<div class="col-sm-3">
-	<!-- ******************* The Navbar Area ******************* -->
-	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
+			<!-- ******************* The Navbar Area ******************* -->
+			<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
@@ -82,4 +82,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- .wrapper-navbar end -->
-</div>
+		</div>
+		<div class="col-sm-9">
+
