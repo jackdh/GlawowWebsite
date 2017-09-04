@@ -9133,14 +9133,73 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat");
+  font-weight: normal; }
+
 #wrapper-navbar {
   height: 100%; }
-  #wrapper-navbar nav {
+  #wrapper-navbar nav.large {
     height: 100%; }
-    #wrapper-navbar nav .container {
+    #wrapper-navbar nav.large .container {
       justify-content: center; }
   #wrapper-navbar .navbar {
     align-items: flex-start; }
+
+.main-wrap {
+  background-color: #f1f1f3; }
+
+.header-wrap {
+  background-color: #343a40;
+  padding: 0; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+.blog-info-name {
+  display: flex; }
+  .blog-info-name a {
+    font-weight: 800px;
+    line-height: 70px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    text-align: left;
+    font-size: 35px;
+    padding: 50px 15px; }
+
+.small-top-nav .container {
+  background-color: black;
+  padding-left: 0; }
+  .small-top-nav .container ul {
+    display: flex;
+    align-items: stretch;
+    /* Default */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start; }
+    .small-top-nav .container ul li {
+      display: block;
+      flex: 0 1 auto;
+      /* Default */
+      list-style-type: none;
+      background-color: #343a40;
+      margin-right: 2px;
+      margin-bottom: 2px;
+      margin-top: 2px; }
+      .small-top-nav .container ul li i {
+        color: black;
+        font-size: 27px;
+        padding: 5px 5px 0px 5px; }
+      .small-top-nav .container ul li.active {
+        background-color: #343a40; }
+        .small-top-nav .container ul li.active i {
+          color: #f1f1f3; }
+      .small-top-nav .container ul li:hover i {
+        color: #f1f1f3;
+        cursor: pointer; }
 
 /*
 * Use existing Bootstrap 4 classes and

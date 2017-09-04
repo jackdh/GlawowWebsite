@@ -1,7 +1,14 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+@font-face {
+  font-family: Montserrat;
+  src: url('https://fonts.googleapis.com/css?family=Montserrat');
+  font-weight: normal;
+}
+
 #wrapper-navbar {
   height: 100%;
-  nav {
+  nav.large {
     height: 100%;
     .container {
       justify-content: center;
@@ -11,3 +18,73 @@
     align-items: flex-start;
   }
 }
+
+.main-wrap {
+  background-color: $gray;
+}
+.header-wrap {
+  background-color: $dark;
+  padding: 0;
+
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+.blog-info-name {
+  display: flex;
+  a {
+    font-weight: 800px;
+    line-height: 70px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    text-align: left;
+    font-size: 35px;
+    padding: 50px 15px;
+  }
+}
+
+.small-top-nav {
+  .container {
+    background-color: black;
+    padding-left: 0;
+
+    ul {
+      display: flex;
+      align-items: stretch; /* Default */
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      justify-content: flex-start;
+      li {
+        display: block;
+        flex: 0 1 auto; /* Default */
+        list-style-type: none;
+        background-color: $dark;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        i {
+          color: black;
+          font-size: 27px;
+          padding: 5px 5px 0px 5px;
+        }
+        &.active {
+          background-color: $dark;
+          i {
+            color: $gray;
+            //color: black;
+          }
+        }
+        &:hover {
+          i {
+            color: $gray;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+

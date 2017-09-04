@@ -71,3 +71,14 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+
+    $html = str_replace( 'custom-logo', 'rounded-circle', $html );
+//    $html = str_replace( 'custom-logo-link', 'your-custom-class', $html );
+
+    return $html;
+}
