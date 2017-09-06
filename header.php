@@ -20,6 +20,7 @@ $container = get_theme_mod('understrap_container_type');
     <meta name="apple-mobile-web-app-title" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -27,7 +28,7 @@ $container = get_theme_mod('understrap_container_type');
 
 <div class="hfeed site container-fluid" id="page">
 
-    <div class="row">
+    <div id='page-wrap-header' class="row">
         <div class="col-lg-2 col-md-3  col-sm-4 header-wrap">
             <!-- ******************* The Navbar Area ******************* -->
             <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
@@ -81,7 +82,7 @@ $container = get_theme_mod('understrap_container_type');
 
                             <?php endif; } else { ?>
 
-                            <div class='container'>
+                            <div class='container customer-logo-container'>
                                 <?php the_custom_logo(); ?>
                             </div>
                             <div class='container blog-info-name'>
@@ -90,6 +91,15 @@ $container = get_theme_mod('understrap_container_type');
                             </div>
                             <!-- end custom logo -->
                         <?php } ?>
+                        <div class='container'>
+                            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("home_blurb") ) : ?>
+                            <?php endif;?>
+                        </div>
+
+                        <div class='container pagination-main'>
+                            <a class='toggle-posts'>Portfolio</a>
+                            <a class='toggle-posts'>Blog</a>
+                        </div>
 
 
                         <!-- The WordPress Menu goes here -->
@@ -112,5 +122,5 @@ $container = get_theme_mod('understrap_container_type');
 
             </div><!-- .wrapper-navbar end -->
         </div>
-        <div class="col main-wrap">
+        <div class="col-lg-10 col-md-9  col-sm-8 main-wrap">
 

@@ -77,8 +77,18 @@ add_filter( 'get_custom_logo', 'change_logo_class' );
 
 function change_logo_class( $html ) {
 
-    $html = str_replace( 'custom-logo', 'rounded-circle', $html );
+    $html = str_replace( 'custom-logo', 'custom-logo-class', $html );
 //    $html = str_replace( 'custom-logo-link', 'your-custom-class', $html );
 
     return $html;
 }
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+            'name' => 'home_blurb',
+            'before_widget' => '<div class = "home_blurb">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        )
+    );

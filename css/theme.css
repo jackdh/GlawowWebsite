@@ -9133,17 +9133,21 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
-@font-face {
-  font-family: Montserrat;
-  src: url("https://fonts.googleapis.com/css?family=Montserrat");
-  font-weight: normal; }
+html,
+body,
+.site {
+  height: 100%; }
+
+.wrapper {
+  padding: 0; }
+
+#page-wrap-header {
+  height: 100%; }
 
 #wrapper-navbar {
   height: 100%; }
-  #wrapper-navbar nav.large {
-    height: 100%; }
-    #wrapper-navbar nav.large .container {
-      justify-content: center; }
+  #wrapper-navbar nav.large .container {
+    justify-content: center; }
   #wrapper-navbar .navbar {
     align-items: flex-start; }
 
@@ -9191,6 +9195,11 @@ a.skip-link {
       margin-top: 2px; }
       .small-top-nav .container ul li i {
         color: black;
+        -webkit-transition: color 0.2s ease;
+        -moz-transition: color 0.2s ease;
+        -ms-transition: color 0.2s ease;
+        -o-transition: color 0.2s ease;
+        transition: color 0.2s ease;
         font-size: 27px;
         padding: 5px 5px 0px 5px; }
       .small-top-nav .container ul li.active {
@@ -9198,8 +9207,51 @@ a.skip-link {
         .small-top-nav .container ul li.active i {
           color: #f1f1f3; }
       .small-top-nav .container ul li:hover i {
+        -webkit-transition: color 0.2s ease;
+        -moz-transition: color 0.2s ease;
+        -ms-transition: color 0.2s ease;
+        -o-transition: color 0.2s ease;
+        transition: color 0.2s ease;
         color: #f1f1f3;
         cursor: pointer; }
+
+.navbar-brand {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal; }
+
+.customer-logo-container {
+  margin-top: 18%; }
+
+.custom-logo-class {
+  border-radius: 10px; }
+
+.home_blurb {
+  color: #f1f1f3; }
+  .home_blurb .textwidget {
+    text-align: center;
+    font-size: 1em;
+    font-family: Montserrat, sans-serif; }
+
+.pagination-main {
+  text-align: center;
+  margin-top: 50px; }
+  .pagination-main .toggle-posts {
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    color: #f1f1f3 !important;
+    border: 1px solid #000;
+    padding: 12px;
+    cursor: pointer; }
+    .pagination-main .toggle-posts:hover {
+      background-color: #000;
+      -webkit-transition: background-color 0.3s ease;
+      -moz-transition: background-color 0.3s ease;
+      -ms-transition: background-color 0.3s ease;
+      -o-transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease; }
 
 /*
 * Use existing Bootstrap 4 classes and
